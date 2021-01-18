@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/payment.dart';
 import 'package:flutter_app/store.dart';
 
 class HomePage extends StatelessWidget {
@@ -24,6 +25,12 @@ class HomePage extends StatelessWidget {
                 title: new Text("Store"),
                 onTap: () => {
                   Navigator.push(context, new MaterialPageRoute(builder: (BuildContext con) => new StorePage()))
+                },
+              ),
+              new ListTile(
+                title: new Text("Payment"),
+                onTap: () => {
+                  Navigator.push(context, new MaterialPageRoute(builder: (BuildContext con) => new PaymentPage()))
                 },
               ),
               Expanded(child: Container()),
